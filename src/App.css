@@ -1,0 +1,288 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --button-color: #d7263d;
+  --hover-color: #a71e2f;
+  --text-color: #ffffff;
+}
+
+/* standard button */
+.btn {
+  background-color: var(--button-color);
+  background: #1C5D99;
+  /* background: #219CE8; */
+  width: 300px;
+  width: 88%;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  font-size: 1.3em;
+  padding: 0.7em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+    border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.4s;
+  user-select: none;
+  outline: none;
+  margin-top: .6em;
+  
+}
+
+.btn:hover {
+  background-color: var(--hover-color);
+  background-color: #153b5e;
+}
+.btn:active {
+  scale: 0.9;
+}
+
+/* input */
+.input {
+  /* background-color: red; */
+  padding: 0.3em;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.input label {
+  /* background: green; */
+  /* padding: .3em; */
+  color: #1C5D99;
+  font-weight: 600;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.2em;
+  border-radius: 5px;
+  color: #1F0318;
+}
+.input input {
+  border: none;
+  outline: none;
+  padding: 0.7em;
+  margin: 0.2em;
+  width: 100%;
+  border: 0.3px solid #1C5D99;
+  border-radius: 1px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+/* entries */
+.entries {
+  margin: 0 auto;
+  border: 0.5px solid black;
+  width: 100%;
+  height: 100vh;
+  /* margin: .5em; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.entries .right {
+  background: #92B4F4;
+  background: #0b2f50;
+  background: #042b53;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.entries .left {
+  background: rgb(236, 233, 233);
+  background: #113c65;
+   background: #1F0318;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.entries .left img{
+  width: 400px;
+  object-fit: cover;
+}
+.entries .right .form {
+  background: white;
+  height: 100%;
+  width: 85%;
+  border-radius: 10px;
+  scale: .9;
+  /* border: .2px solid grey; */
+  /* box-shadow: 2px 2px 15px grey; */
+  
+}
+.entries h2 {
+  color: #a71e2f;
+  color: #1F0318;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 2em;
+  text-align: center;
+  margin: 0.8em;
+  user-select: none;
+  /* border: 1px solid red; */
+  background: #1F0318;
+  color: white;
+  padding: .5em;
+  border-radius: 12px;
+  background: #a71e2f;
+}
+
+.entries .cards{
+  margin: 0 auto;
+  padding: .5em;
+  /* background: maroon; */
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* scale: .9; */
+}
+.entries .cards .amt{
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* background: blue; */
+  border: 2px solid #1F0318;
+  color: #1C5D99;
+  margin: .4em;
+  margin-left: .1em;
+  width: 30%;
+  text-align: center;
+  padding: .9em;
+  border-radius: 4px;
+  transition: all .2s;
+  user-select: none;
+  
+}
+.entries .cards .amt:active{
+  scale: 1.1;
+}
+.entries .cards .amt:hover{
+  background: #1C5D99;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.entries .details{
+  margin: 1px auto;
+  /* background: moccasin; */
+  width: 95%;
+  padding: .5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  
+  /* box-shadow: 2px 2px 15px grey; */
+}
+
+@media screen and (max-width: 480px) {
+  .entries{
+    flex-direction: column;
+  }
+  .entries .left, .entries .right{
+    width: 100%;
+  }
+  .entries .left img{
+    
+  }
+  .entries .right .form{
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    /* top: 160px; */
+    /* scale: 1; */
+  }
+  .entries .cards{
+    /* flex-direction: column; */
+  }
+  .btn{
+    margin-bottom: 1em;
+  }
+}
+
+
+.donation-table {
+  max-width: 100%;
+  overflow-x: auto;
+  margin-top: 20px;
+  scale: .95;
+}
+
+.donation-table h2,h3{
+  color: #a71e2f;
+  padding: .6em;
+  background: #042b53;
+  color: white;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  font-weight: 550;
+  color: #1F0318;
+  color: white;
+  color: black;
+  padding: 1em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* background: #1F0318; */
+  /* color: white; */
+}
+
+.styled-table tbody tr:nth-child(even) {
+  background-color: #dad4d4;
+  /* background: #D7263D;
+  color: white;
+  background: rgb(0, 0, 0);
+  background: #1F0318; */
+  /* color: #1F0318; */
+}
+.styled-table tbody tr:nth-child(odd) {
+  background-color: #f5f5f5;
+  /* background: #1C5D99;
+  background: #0b2f50; */
+}
+
+.styled-table th {
+  background-color: #f2f2f2;
+  background: #0b2f50;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.styled-table tbody tr:hover {
+  background-color: #9a8c8c;
+  /* background: #113c65; */
+  color: white;
+}
+
+.styled-table tfoot {
+  font-weight: bold;
+  /* background: #1F0318; */
+  /* background: rgb(52, 52, 52); */
+  color: white;
+}
