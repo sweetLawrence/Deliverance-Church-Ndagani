@@ -39,7 +39,7 @@ const Entries = () => {
   };
   // console.log(formData)
   const handleCardClick = (amount) => {
-    // Update the amount field in the form data
+ 
     handleInputChange("Amount", amount.toString());
   };
   return (
