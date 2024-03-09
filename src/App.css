@@ -13,7 +13,6 @@
 .btn {
   background-color: var(--button-color);
   background: #1c5d99;
-  /* background: #219CE8; */
   width: 300px;
   width: 88%;
   text-align: center;
@@ -42,15 +41,12 @@
 
 /* input */
 .input {
-  /* background-color: red; */
   padding: 0.3em;
   display: flex;
   flex-direction: column;
   width: 90%;
 }
 .input label {
-  /* background: green; */
-  /* padding: .3em; */
   color: #1c5d99;
   font-weight: 600;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -79,7 +75,6 @@
   border: 0.5px solid black;
   width: 100%;
   height: 100vh;
-  /* margin: .5em; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -114,8 +109,7 @@
   width: 85%;
   border-radius: 10px;
   scale: 0.9;
-  /* border: .2px solid grey; */
-  /* box-shadow: 2px 2px 15px grey; */
+
 }
 .entries h2 {
   color: #a71e2f;
@@ -126,7 +120,6 @@
   text-align: center;
   margin: 0.8em;
   user-select: none;
-  /* border: 1px solid red; */
   background: #1f0318;
   color: white;
   padding: 0.5em;
@@ -137,13 +130,12 @@
 .entries .cards {
   margin: 0 auto;
   padding: 0.5em;
-  /* background: maroon; */
   width: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  /* scale: .9; */
+
 }
 .entries .cards .amt {
   color: white;
@@ -151,7 +143,6 @@
   font-weight: 600;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  /* background: blue; */
   border: 2px solid #1f0318;
   color: #1c5d99;
   margin: 0.4em;
@@ -174,15 +165,12 @@
 }
 .entries .details {
   margin: 1px auto;
-  /* background: moccasin; */
   width: 95%;
   padding: 0.5em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  /* box-shadow: 2px 2px 15px grey; */
 }
 
 @media screen and (max-width: 480px) {
@@ -193,18 +181,13 @@
   .entries .right {
     width: 100%;
   }
-  .entries .left img {
-  }
+
   .entries .right .form {
     width: 100%;
     height: 100%;
-    /* position: absolute; */
-    /* top: 160px; */
-    /* scale: 1; */
+
   }
-  .entries .cards {
-    /* flex-direction: column; */
-  }
+
   .btn {
     margin-bottom: 1em;
   }
@@ -247,22 +230,13 @@ h3 {
   padding: 1em;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  /* background: #1F0318; */
-  /* color: white; */
 }
 
 .styled-table tbody tr:nth-child(even) {
   background-color: #dad4d4;
-  /* background: #D7263D;
-  color: white;
-  background: rgb(0, 0, 0);
-  background: #1F0318; */
-  /* color: #1F0318; */
 }
 .styled-table tbody tr:nth-child(odd) {
   background-color: #f5f5f5;
-  /* background: #1C5D99;
-  background: #0b2f50; */
 }
 
 .styled-table th {
@@ -275,14 +249,11 @@ h3 {
 
 .styled-table tbody tr:hover {
   background-color: #9a8c8c;
-  /* background: #113c65; */
   color: white;
 }
 
 .styled-table tfoot {
   font-weight: bold;
-  /* background: #1F0318; */
-  /* background: rgb(52, 52, 52); */
   color: white;
 }
 
