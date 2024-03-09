@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom';
 
 const Totals = () => {
   const [donations, setDonations] = useState([]);
@@ -20,9 +23,15 @@ const Totals = () => {
     const total = data.reduce((sum, donation) => sum + donation.Amount, 0);
     setTotalAmount(total);
   };
+  const navigate = useNavigate();
 
+  const handleClick = () => {
+    navigate('/');
+  };
   return (
     <div className="donation-table">
+        <p style={{ color: '#1C5D99', margin: '.9em' }} onClick={handleClick}><FontAwesomeIcon icon={faHome} size="2x"/> <span className='xc'>Home</span></p>
+
       <h2>Deliverance Church Ndagani</h2>
       <h3>Giving History</h3>
       <table className="styled-table">

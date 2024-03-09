@@ -4,6 +4,7 @@ import Input from "../components/Input";
 import Button from "../components/Button";
 import Box from "../assets/chbox.png";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const Entries = () => {
   const [formData, setFormData] = useState({
@@ -41,6 +42,13 @@ const Entries = () => {
   const handleCardClick = (amount) => {
  
     handleInputChange("Amount", amount.toString());
+  };
+
+  const navigate = useNavigate();
+
+
+  const handleClick = () => {
+    navigate('/totals');
   };
   return (
     <div className="entries">
@@ -85,6 +93,7 @@ const Entries = () => {
                 onInputChange={handleInputChange}
               />
               <Button type="submit" />
+              <p className="xc xcc" onClick={handleClick}>Totals</p>
             </div>
             <div className="more"></div>
           </form>

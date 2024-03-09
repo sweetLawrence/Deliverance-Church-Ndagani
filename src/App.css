@@ -12,7 +12,7 @@
 /* standard button */
 .btn {
   background-color: var(--button-color);
-  background: #1C5D99;
+  background: #1c5d99;
   /* background: #219CE8; */
   width: 300px;
   width: 88%;
@@ -23,14 +23,13 @@
   padding: 0.7em;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-    border: none;
+  border: none;
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.4s;
   user-select: none;
   outline: none;
-  margin-top: .6em;
-  
+  margin-top: 0.6em;
 }
 
 .btn:hover {
@@ -52,13 +51,13 @@
 .input label {
   /* background: green; */
   /* padding: .3em; */
-  color: #1C5D99;
+  color: #1c5d99;
   font-weight: 600;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 1.2em;
   border-radius: 5px;
-  color: #1F0318;
+  color: #1f0318;
 }
 .input input {
   border: none;
@@ -66,7 +65,7 @@
   padding: 0.7em;
   margin: 0.2em;
   width: 100%;
-  border: 0.3px solid #1C5D99;
+  border: 0.3px solid #1c5d99;
   border-radius: 1px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -86,7 +85,7 @@
   justify-content: space-between;
 }
 .entries .right {
-  background: #92B4F4;
+  background: #92b4f4;
   background: #0b2f50;
   background: #042b53;
   width: 50%;
@@ -98,14 +97,14 @@
 .entries .left {
   background: rgb(236, 233, 233);
   background: #113c65;
-   background: #1F0318;
+  background: #1f0318;
   width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.entries .left img{
+.entries .left img {
   width: 400px;
   object-fit: cover;
 }
@@ -114,14 +113,13 @@
   height: 100%;
   width: 85%;
   border-radius: 10px;
-  scale: .9;
+  scale: 0.9;
   /* border: .2px solid grey; */
   /* box-shadow: 2px 2px 15px grey; */
-  
 }
 .entries h2 {
   color: #a71e2f;
-  color: #1F0318;
+  color: #1f0318;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 2em;
@@ -129,16 +127,16 @@
   margin: 0.8em;
   user-select: none;
   /* border: 1px solid red; */
-  background: #1F0318;
+  background: #1f0318;
   color: white;
-  padding: .5em;
+  padding: 0.5em;
   border-radius: 12px;
   background: #a71e2f;
 }
 
-.entries .cards{
+.entries .cards {
   margin: 0 auto;
-  padding: .5em;
+  padding: 0.5em;
   /* background: maroon; */
   width: 80%;
   display: flex;
@@ -147,87 +145,87 @@
   flex-wrap: wrap;
   /* scale: .9; */
 }
-.entries .cards .amt{
+.entries .cards .amt {
   color: white;
   font-size: 1.2em;
   font-weight: 600;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   /* background: blue; */
-  border: 2px solid #1F0318;
-  color: #1C5D99;
-  margin: .4em;
-  margin-left: .1em;
+  border: 2px solid #1f0318;
+  color: #1c5d99;
+  margin: 0.4em;
+  margin-left: 0.1em;
   width: 30%;
   text-align: center;
-  padding: .9em;
+  padding: 0.9em;
   border-radius: 4px;
-  transition: all .2s;
+  transition: all 0.2s;
   user-select: none;
-  
 }
-.entries .cards .amt:active{
+.entries .cards .amt:active {
   scale: 1.1;
 }
-.entries .cards .amt:hover{
-  background: #1C5D99;
+.entries .cards .amt:hover {
+  background: #1c5d99;
   border: none;
   color: white;
   cursor: pointer;
 }
-.entries .details{
+.entries .details {
   margin: 1px auto;
   /* background: moccasin; */
   width: 95%;
-  padding: .5em;
+  padding: 0.5em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
-  
+
   /* box-shadow: 2px 2px 15px grey; */
 }
 
 @media screen and (max-width: 480px) {
-  .entries{
+  .entries {
     flex-direction: column;
   }
-  .entries .left, .entries .right{
+  .entries .left,
+  .entries .right {
     width: 100%;
   }
-  .entries .left img{
-    
+  .entries .left img {
   }
-  .entries .right .form{
+  .entries .right .form {
     width: 100%;
     height: 100%;
     /* position: absolute; */
     /* top: 160px; */
     /* scale: 1; */
   }
-  .entries .cards{
+  .entries .cards {
     /* flex-direction: column; */
   }
-  .btn{
+  .btn {
     margin-bottom: 1em;
   }
 }
-
 
 .donation-table {
   max-width: 100%;
   overflow-x: auto;
   margin-top: 20px;
-  scale: .95;
+  scale: 0.95;
 }
 
-.donation-table h2,h3{
+.donation-table h2,
+h3 {
   color: #a71e2f;
-  padding: .6em;
+  padding: 0.6em;
   background: #042b53;
   color: white;
   text-align: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .styled-table {
@@ -243,11 +241,12 @@
   padding: 12px 15px;
   border-bottom: 1px solid #ddd;
   font-weight: 550;
-  color: #1F0318;
+  color: #1f0318;
   color: white;
   color: black;
   padding: 1em;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   /* background: #1F0318; */
   /* color: white; */
 }
@@ -270,8 +269,8 @@
   background-color: #f2f2f2;
   background: #0b2f50;
   color: white;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .styled-table tbody tr:hover {
@@ -285,4 +284,20 @@
   /* background: #1F0318; */
   /* background: rgb(52, 52, 52); */
   color: white;
+}
+
+.xc {
+  font-weight: 600;
+  font-size: 1.2em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-left: 0.4em;
+  margin: 0.3em;
+  text-align: left;
+}
+.xcc {
+  text-decoration: underline;
+  scale: 0.7;
+  margin: 0.7;
+  cursor: pointer;
 }
