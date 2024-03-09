@@ -23,6 +23,8 @@ const Entries = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form Data:", formData);
+   
+
     axios
       .post(
         "https://offering.pockethost.io/api/collections/offering/records",
@@ -30,6 +32,7 @@ const Entries = () => {
       )
       .then((response) => {
         console.log(response);
+        window.location.reload()
         // console.log(response.data.items)
       })
       .catch((error) => console.error("Error posting data:", error));
@@ -37,7 +40,7 @@ const Entries = () => {
   // console.log(formData)
   const handleCardClick = (amount) => {
     // Update the amount field in the form data
-    handleInputChange("amount", amount.toString());
+    handleInputChange("Amount", amount.toString());
   };
   return (
     <div className="entries">
@@ -78,7 +81,7 @@ const Entries = () => {
                 name="Amount"
                 type="number"
                 id="Amount"
-                value={formData.amount}
+                value={formData.Amount}
                 onInputChange={handleInputChange}
               />
               <Button type="submit" />
