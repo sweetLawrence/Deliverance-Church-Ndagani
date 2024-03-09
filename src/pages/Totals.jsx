@@ -24,7 +24,7 @@ const Totals = () => {
   return (
     <div className="donation-table">
       <h2>Deliverance Church Ndagani</h2>
-      <h3>Offering History</h3>
+      <h3>Giving History</h3>
       <table className="styled-table">
         <thead>
           <tr>
