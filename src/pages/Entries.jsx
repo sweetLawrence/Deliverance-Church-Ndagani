@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { AmountCard } from "../components/AmountCard";
 import Input from "../components/Input";
 import Button from "../components/Button";
-import Box from "../assets/chbox.png";
+import Box from "../assets/logo4.png";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 

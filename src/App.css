@@ -90,9 +90,10 @@
   justify-content: center;
 }
 .entries .left {
-  background: rgb(236, 233, 233);
-  background: #113c65;
-  background: #1f0318;
+  background: rgb(237, 234, 234);
+  /* background: #113c65; */
+  /* background: #1f0318; */
+  /* filter: brightness(); */
   width: 50%;
   height: 100%;
   display: flex;
@@ -102,6 +103,7 @@
 .entries .left img {
   width: 400px;
   object-fit: cover;
+  filter: brightness(1);
 }
 .entries .right .form {
   background: white;
@@ -266,6 +268,7 @@ h3 {
   margin-left: 0.4em;
   margin: 0.3em;
   text-align: left;
+  cursor: pointer;
 }
 .xcc {
   text-decoration: underline;
