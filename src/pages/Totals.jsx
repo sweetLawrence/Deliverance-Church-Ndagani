@@ -105,6 +105,13 @@ const Totals = () => {
     };
 
     fetchData();
+
+    const refreshInterval = setInterval(() => {
+      fetchData();
+      
+    }, 2500);
+
+    return () => clearInterval(refreshInterval);
   }, []);
 
   const calculateTotalAmount = (data) => {
@@ -118,11 +125,15 @@ const Totals = () => {
     navigate("/");
   };
 
+  const totals = donations.length
+
   return (
     <div className="donation-table">
       <p style={{ color: "#1C5D99", margin: ".9em" }} onClick={handleClick}>
         <FontAwesomeIcon icon={faHome} size="2x" />{" "}
         <span className="xc">Home</span>
+       <span style={{ color: "#1C5D99", margin: ".9em", fontSize:"1.2em",fontWeight:"700", textDecoration:"underline" }}>{totals} Givers </span>
+       <span style={{ color: "#a71e2f", margin: ".9em" ,fontSize:"1.2em", fontWeight:"700"}}>Ksh {totalAmount} </span>
       </p>
 
       <h2>Deliverance Church Ndagani</h2>
