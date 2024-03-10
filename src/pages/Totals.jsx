@@ -132,8 +132,8 @@ const Totals = () => {
       <p style={{ color: "#1C5D99", margin: ".9em" }} onClick={handleClick}>
         <FontAwesomeIcon icon={faHome} size="2x" />{" "}
         <span className="xc">Home</span>
-       <span style={{ color: "#1C5D99", margin: ".9em", fontSize:"1.2em",fontWeight:"700", textDecoration:"underline" }}>{totals} Givers </span>
-       <span style={{ color: "#a71e2f", margin: ".9em" ,fontSize:"1.2em", fontWeight:"700"}}>Ksh {totalAmount} </span>
+       <span style={{ color: "#1C5D99", margin: ".9em", fontSize:"1.2em",fontWeight:"700", textDecoration:"underline" }}>{totals} Blessed Givers</span>
+       <p style={{ color: "#a71e2f", marginTop: ".7em" ,marginLeft: ".2em",fontSize:"1.2em", fontWeight:"700"}}>Current Total: Ksh {totalAmount} </p>
       </p>
 
       <h2>Deliverance Church Ndagani</h2>
