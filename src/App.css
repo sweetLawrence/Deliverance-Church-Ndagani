@@ -223,6 +223,7 @@ h3 {
   margin: 25px 0;
   font-size: 18px;
   text-align: left;
+  user-select: none;
 }
 
 .styled-table th,
