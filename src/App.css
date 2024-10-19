@@ -198,6 +198,10 @@
     margin-bottom: 1em;
   }
 }
+.donation-table {
+  /* background-color: red; */
+  margin-top: 10px!important;
+}
 
 .donation-table {
   max-width: 100%;

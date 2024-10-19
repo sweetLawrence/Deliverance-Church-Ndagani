@@ -28,7 +28,7 @@ const Entries = () => {
 
     axios
       .post(
-        "https://offering.pockethost.io/api/collections/offering/records",
+        "https://offering.pockethost.io/api/collections/OctberOffering/records",
         formData
       )
       .then((response) => {

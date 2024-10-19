@@ -82,7 +82,7 @@ const Totals = () => {
 
         //  First page
         const response = await axios.get(
-          `https://offering.pockethost.io/api/collections/offering/records?page=${page}`
+          `https://offering.pockethost.io/api/collections/OctberOffering/records?page=${page}`
         );
         allDonations = allDonations.concat(response.data.items);
 
@@ -90,7 +90,7 @@ const Totals = () => {
         while (response.data.items.length > 0) {
           page += 1;
           const nextPageResponse = await axios.get(
-            `https://offering.pockethost.io/api/collections/offering/records?page=${page}`
+            `https://offering.pockethost.io/api/collections/OctberOffering/records?page=${page}`
           );
           allDonations = allDonations.concat(nextPageResponse.data.items);
           response.data.items = nextPageResponse.data.items;
@@ -131,8 +131,8 @@ const Totals = () => {
     <div className="donation-table">
       <p style={{ color: "#1C5D99", margin: ".9em" }} onClick={handleClick}>
         <FontAwesomeIcon icon={faHome} size="2x" />{" "}
-        <span className="xc">Home</span>
-       <span style={{ color: "#1C5D99", margin: ".9em",marginTop: ".1em", fontSize:"1.2em",fontWeight:"700", textDecoration:"underline" }}>{totals} Blessed Givers</span>
+        <p className="xc">Home</p>
+       <p style={{ color: "#1C5D99", margin: ".9em",marginTop: ".1em", fontSize:"1.2em",fontWeight:"700", textDecoration:"underline" }}>{totals} Blessed Givers</p>
        <p style={{ color: "#a71e2f", marginTop: ".7em" ,marginLeft: ".2em",fontSize:"1.2em", fontWeight:"700"}}>Current Total: Ksh {totalAmount} </p>
       </p>
 
